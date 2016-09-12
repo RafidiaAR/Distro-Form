@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingTop="@dimen/activity_vertical_margin">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1028.orderyourchoice.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/highlighted_text_material_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Inovating Product"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="right" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/sch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Data"
+        android:id="@+id/textView2"
+        android:textStyle="bold|italic"
+        android:textSize="15dp"
+        android:textColor="@color/design_textinput_error_color_dark" />
+<android.support.design.widget.TextInputLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name"/>
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:hint="Address"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:hint="ID Card Number"
+        android:inputType="numberSigned" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bgbtn"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="OK"
+        android:id="@+id/buttonOK"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hasil1"
+        android:id="@+id/hasil1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product List"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/design_textinput_error_color_dark"
+        android:textStyle="bold|italic"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item"
+        android:id="@+id/textView6"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/design_textinput_error_color_dark" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T - Shirts"
+        android:id="@+id/shs"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jacket"
+        android:id="@+id/jck"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoodie"
+        android:id="@+id/hd"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sweatshirts"
+        android:id="@+id/sws"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:id="@+id/textView7"
+        android:textColor="@color/design_textinput_error_color_dark"
+        android:textStyle="bold|italic"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grey"
+            android:id="@+id/gre"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:id="@+id/blk"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/rd"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Brown"
+            android:id="@+id/db"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:id="@+id/textView8"
+        android:textColor="@color/design_textinput_error_color_dark"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/size"
+        android:id="@+id/spinner" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jmlh"
+        android:inputType="numberSigned"
+        android:hint="Amount(pcs)"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bgbtn"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:text="Order Now "
+        android:id="@+id/buttonorder"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hasil5"
+        android:id="@+id/hasil2"
+        android:text="hasil2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hasil6"
+        android:id="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="hasil7"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© Rafidia Aqil R./2016"
+        android:id="@+id/textView13"
+        android:layout_gravity="right" />
+
+</LinearLayout>
+</ScrollView>
