@@ -6,15 +6,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etname, etadrs, etnmbr;
+    EditText etname, etadrs, etnmbr,etamnt;
     Button bOK, bOR;
-    TextView tvhasil1,tvhasil2;
+    TextView tvhasil1,tvhasil2,tvhasil3,tvhasil4;
     CheckBox cb1,cb2,cb3,cb4;
-
+    RadioButton rbG,rbR,rbB,rbDB;
+    RadioGroup rgstatus;
+    Spinner sp1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +28,22 @@ public class MainActivity extends AppCompatActivity {
         etname = (EditText) findViewById(R.id.name);
         etadrs = (EditText) findViewById(R.id.address);
         etnmbr = (EditText) findViewById(R.id.number);
+        etamnt = (EditText) findViewById(R.id.jmlh);
         bOK = (Button) findViewById(R.id.buttonOK);
         tvhasil1 = (TextView) findViewById(R.id.hasil1);
         tvhasil2 = (TextView) findViewById(R.id.hasil2);
+        tvhasil3 = (TextView) findViewById(R.id.hasil3);
+        tvhasil4 = (TextView) findViewById(R.id.hasil4);
         cb1 = (CheckBox) findViewById(R.id.shs);
         cb2 = (CheckBox) findViewById(R.id.jck);
         cb3 = (CheckBox) findViewById(R.id.hd);
         cb4 = (CheckBox) findViewById(R.id.sws);
+        rbG = (RadioButton) findViewById(R.id.gre);
+        rbB = (RadioButton) findViewById(R.id.blk);
+        rbR = (RadioButton) findViewById(R.id.rd);
+        rbDB = (RadioButton) findViewById(R.id.db);
+        rgstatus = (RadioGroup) findViewById(R.id.radiogro);
+        sp1 = (Spinner) findViewById(R.id.spinner1);
         bOR = (Button) findViewById(R.id.buttonorder);
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +119,25 @@ public class MainActivity extends AppCompatActivity {
 
         if(hasil.length()==starlen) hasil+="Tidak ada pada pilihan";
         tvhasil2.setText(hasil);
+
+        String hasil3= null;
+        if(rgstatus.getCheckedRadioButtonId() !=-1)
+        {
+            RadioButton rb=(RadioButton)
+                    findViewById(rgstatus.getCheckedRadioButtonId());
+            hasil3 = rb.getText().toString();
+        }
+
+        if(hasil3 == null){
+            tvhasil3.setText("Anda Belum Memilih Warna");
+        }
+        else{
+            tvhasil3.setText("Warna Yang Anda Pilih : "+ hasil3);
+        }
+
+
+        String jmlh = etamnt.getText().toString();
+        tvhasil4.setText("Ukuran Anda : "+sp1.getSelectedItem().toString() + "\n" + "Jumlah Produk dipesan : "+ jmlh +"Pcs");
     }
 
 }
