@@ -40,7 +40,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        findViewById(R.id.buttonorder).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doClick();
+            }
+        });
     }
 
     private void doProcess() {
@@ -90,4 +95,16 @@ public class MainActivity extends AppCompatActivity {
         }
         return valid;
     }
+    private void doClick() {
+        String hasil = "Produk yang Anda Pilih :\n";
+        int starlen = hasil.length();
+        if(cb1.isChecked()) hasil+=cb1.getText()+"\n";
+        if(cb2.isChecked()) hasil+=cb2.getText()+"\n";
+        if(cb3.isChecked()) hasil+=cb3.getText()+"\n";
+        if(cb4.isChecked()) hasil+=cb4.getText()+"\n";
+
+        if(hasil.length()==starlen) hasil+="Tidak ada pada pilihan";
+        tvhasil2.setText(hasil);
+    }
+
 }
