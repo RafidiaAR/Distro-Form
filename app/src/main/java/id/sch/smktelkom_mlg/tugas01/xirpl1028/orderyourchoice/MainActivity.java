@@ -1,7 +1,7 @@
 package id.sch.smktelkom_mlg.tugas01.xirpl1028.orderyourchoice;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.buttonorder).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 doClick();
             }
         });
@@ -139,5 +139,4 @@ public class MainActivity extends AppCompatActivity {
         String jmlh = etamnt.getText().toString();
         tvhasil4.setText("Ukuran Anda : "+sp1.getSelectedItem().toString() + "\n" + "Jumlah Produk dipesan : "+ jmlh +"Pcs");
     }
-
 }
