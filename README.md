@@ -40,3 +40,6 @@ DETEKSI KESALAHAN :
 ![3](https://cloud.githubusercontent.com/assets/22127529/18554883/e60400b8-7b8f-11e6-9d7f-9b9cd216a279.png)
 ![4](https://cloud.githubusercontent.com/assets/22127529/18554884/e604077a-7b8f-11e6-90b2-d43ceda1bfc7.png)
 ![5](https://cloud.githubusercontent.com/assets/22127529/18554885/e60be29c-7b8f-11e6-9d3d-2bc4f5f5f533.png)
+
+### E. Link Video
+<p>https://drive.google.com/file/d/0Bz9b-olopeaaMEdmRWtudzhaTDQ/view?usp=sharing</p>
